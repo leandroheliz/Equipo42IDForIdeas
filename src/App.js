@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
+//esta es la pagina de inicio del sitio.
 import './index.css';
-import Login from './Components/Login/Login';
-import Home from './Components/Views/Home';
+import { BrowserRouter } from 'react-router-dom';
+import Rutas from './Routes/Rutas';
 
 function App() {
-
-  const [ usuario, setUsuario ] = useState(null);
-
   return (
     <>
-    { usuario ? <Home/> :  <Login /> }
+    <BrowserRouter>
+    <Rutas/>
+    </BrowserRouter>
     </>
+
   )
 }
 
