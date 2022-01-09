@@ -289,3 +289,7 @@ p {
 .navBarHomebanking{
   background-color: RGB(81, 139, 144);
 }
+
+.avatarPerfil{
+  max-width: 50px;
+}

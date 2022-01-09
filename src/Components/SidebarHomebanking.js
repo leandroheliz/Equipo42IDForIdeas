@@ -5,12 +5,12 @@ const SidebarHomebanking = () => {
   return (
       <div className="row">
 <div className="col-4 sidebar">
-  <div className="logo">
+  <div className="logo text-center">
     <p>Bienvenido @usuario</p>
   </div>
   <div className="menu p-1">
     <Link to="/perfilusuario" className="text-decoration-none text-white">
-      <i class="fas fa-user"></i>Perfl
+      <i className="fas fa-user"></i> Mi Perfl
     </Link>
     <Link to="/" className="text-decoration-none text-white">
       <i className="fas fa-wallet"></i> Saldo

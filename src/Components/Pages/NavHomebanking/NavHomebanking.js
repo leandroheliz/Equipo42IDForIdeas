@@ -1,3 +1,6 @@
+import { Dropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import fotoPerfil from '../../PerfilUsuario/Img/perfil.jpg';
 
 const NavHomebanking = () => {
   return (
@@ -13,9 +16,22 @@ const NavHomebanking = () => {
          <span style={{fontSize: "25px", color: "white"}}>Plus+</span><span style={{fontSize: "25px"}}>Bank</span>
         </li>
       </ul>
-  <span>
-    foto del usuario
-  </span>
+<Dropdown>
+    <img src={fotoPerfil} className="img-fluid rounded-circle avatarPerfil me-2" alt="" />
+  <Dropdown.Toggle variant="ligth" id="dropdown-basic">
+  <span className="text-white">Usuario</span>
+  </Dropdown.Toggle>
+  <Dropdown.Menu className="text-center">
+    <Dropdown.Item href="#/action-1">
+      <Link to="/" className="text-decoration-none text-black"><i className="fas fa-user"></i> Mi Perfil</Link>
+      </Dropdown.Item>
+    <Dropdown.Item href="#/action-2">
+    <Link to="/" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Configuración</Link>
+    </Dropdown.Item>
+    <Dropdown.Item href="#/action-3"><Link to="/" className="text-decoration-none text-black"><i class="fas fa-reply-all"></i> Cerrar Sesión</Link>
+    </Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
     </div>
   </div>
 </nav>
