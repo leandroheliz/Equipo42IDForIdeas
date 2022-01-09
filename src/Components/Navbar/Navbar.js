@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">
-  <Link className="navbar-brand" to="/"><i className="fas fa-university"></i> Bank+</Link>
+  <Link className="navbar-brand" to="/"><i className="fas fa-university"></i> Plus Bank</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
@@ -15,7 +15,7 @@ import { Link, NavLink } from 'react-router-dom';
         <NavLink activeClassName="active" className="nav-item nav-link" to="/" >Home</NavLink>
         </li>
         <li className="nav-item">
-        <NavLink activeClassName="active" className="nav-item nav-link" to="/about">Sobre Bank+</NavLink>
+        <NavLink activeClassName="active" className="nav-item nav-link" to="/about">Sobre Plus Bank</NavLink>
         </li>
         <li className="nav-item">
         <NavLink activeClassName="active" className="nav-item nav-link" to="/preguntas_frecuentes">Preguntas Frecuentes</NavLink>
