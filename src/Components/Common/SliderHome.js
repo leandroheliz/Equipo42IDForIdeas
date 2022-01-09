@@ -1,3 +1,6 @@
+import slider1 from '../../Assets/Image/slider1.png';
+import slider2 from '../../Assets/Image/slider2.png';
+import slider3 from '../../Assets/Image/slider3.png';
 
 const SliderHome = () => {
   return (
@@ -10,13 +13,13 @@ const SliderHome = () => {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="123" className="d-block w-100" alt="..." />
+      <img src={slider1} className="d-block w-100" alt="..." />
     </div>
     <div className="carousel-item">
-      <img src="456" className="d-block w-100" alt="..." />
+      <img src={slider2} className="d-block w-100" alt="..." />
     </div>
     <div className="carousel-item">
-      <img src="789" className="d-block w-100" alt="..." />
+      <img src={slider3} className="d-block w-100" alt="..." />
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

@@ -15,9 +15,10 @@ Abrí­ tu cuenta en Banco Provincia, en simples pasos solo con tu DNI, es grati
 Si ya tenés una cuenta, simplemente asociala a Cuenta DNI y usá tu dinero desde tu celular de manera rápida, simple y segura.
 
 Descargá la aplicación en:</span>
+<br/>
 <div className="d-flex">
-<img src={appstore} alt="" style={{width:"300px", height:"100px"}}/>
-<img src={googleplay} alt="" style={{width:"300px", height:"100px"}}/>
+  <button className="btn"><img src={appstore} alt="" style={{width:"200px", height:"50px"}}/></button>
+  <button className="btn"><img src={googleplay} alt="" style={{width:"200px", height:"50px"}}/></button>
 </div>
 <br/>
 <div className="text-center">
@@ -25,7 +26,7 @@ Descargá la aplicación en:</span>
 </div>
         </div>
         <div className="col">
-       <img src={mobile} alt=""/>
+       <img src={mobile} alt="" style={{width:"600px", height:"600px"}}/>
         </div>
       </div>
     </div>

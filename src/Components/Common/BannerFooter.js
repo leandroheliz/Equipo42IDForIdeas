@@ -23,6 +23,7 @@ const BannerFooter = () => {
         <h5>Te ayudamos</h5>
         </div>
       </div>
+      <br/>
     </div>
   )
 }

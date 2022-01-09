@@ -1,11 +1,12 @@
-import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer text-center">
+        <br/>
       <div className="row">
         <div className="col colFooter">
             <h4>Ayuda y guías</h4>
-            <span><Link to="/" className="text-white" style={{textDecoration: 'none'}}>App Plus Bank</Link></span>
+            <span>App Plus Bank</span>
             <span>Asesoramiento sobre deudas con atraso</span>
             <span>ATM personas con discapacidad visual</span>
             <span>Centro de seguridad</span>    

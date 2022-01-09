@@ -92,6 +92,7 @@ const CardHome = () => {
     </div>
   </div>
 </div>
+<br/>
     </div>
   )
 }

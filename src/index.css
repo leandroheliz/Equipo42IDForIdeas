@@ -9,19 +9,42 @@
   --color2: RGB(65, 179, 95);
 }
 
+/* 518b90 */
+/* 41b35f */
+
+
 body{
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+body::-webkit-scrollbar {
+	width: 8px;
+	background: var(--color1);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: RGB(65, 179, 95);
+	border-radius: 10px;
 }
 
 .navBar{
-  background: var(--color1)
+  background: var(--color1);
+  font-size: 20px;
 }
 
 .btn-home{
-  background:rgb(92, 90, 90);
+  background: RGB(81, 139, 144);
   border: none;
   font-size: 30px;
   width: 400px;
+  border-radius: 35px;
+  padding: 10px;
+}
+
+.btn-home:hover{
+  background: RGB(65, 179, 95);
 }
 
 .sidebar{
@@ -41,28 +64,15 @@ body{
   flex-direction: column;
 }
 
-.page-container{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.wrap{
-  flex: 1;
-}
-
 .footer{
   background: var(--color1);
-  bottom: 0;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  height: 100%;
-  padding-top: 2em;
-  position: relative;
-  width: 100%;
+  margin-top: auto;
 }
 
 .colFooter{
-  display: flex;
+  display:flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+

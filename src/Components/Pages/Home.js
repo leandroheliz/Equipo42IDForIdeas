@@ -6,18 +6,13 @@ import BannerHome2 from '../Common/BannerHome2';
 
 const Home = () => {
   return (
-    <div>
-      <br/>
+    <>
       <SliderHome/>
-      <br/>
       <CardHome/>
-      <br/>
       <BannerHome/>
-      <br/>
       <BannerHome2/>
-      <br/>
       <BannerFooter/>
-    </div>
+    </>
   )
 }
 

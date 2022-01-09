@@ -24,10 +24,10 @@ import { Link, NavLink } from 'react-router-dom';
         <NavLink activeClassName="active" className="nav-item nav-link" to="/contacto">Contacto</NavLink>
         </li>
       </ul>
+    </div>
          <ul className="navbar-nav ms-auto">
            <NavLink activeClassName="active" className="nav-item nav-link" to="/login"><i className="fas fa-sign-in-alt"></i> Login</NavLink>
            </ul>
-    </div>
   </div>
 </nav>           
     )
