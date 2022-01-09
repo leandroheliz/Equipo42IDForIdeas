@@ -11,6 +11,8 @@ const DashboardRoutes = () => {
   return (
     <>
          <Navbar/>
+         <div className="page-container">
+         <div className="wrap">
       <Routes>
         <Route path="about" element={<About />} />
         <Route path="preguntas_frecuentes" element={<PreguntasFrecuentes />} />
@@ -18,7 +20,9 @@ const DashboardRoutes = () => {
         <Route path="/login" element={<Login/>} />
         <Route path="/" element={<Home/>} />
       </Routes>
+      </div>
       <Footer/>
+      </div>
     </>
   )
 }
