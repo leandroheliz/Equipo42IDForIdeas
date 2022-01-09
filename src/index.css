@@ -1,13 +1,278 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --color1: RGB(81, 139, 144);
+  --color2: RGB(65, 179, 95);
+}
+
+/* 518b90 */
+/* 41b35f */
+
+/*Marcos overflow x hidden*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background: var(--color1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: RGB(65, 179, 95);
+  border-radius: 10px;
+}
+
+.navBar {
+  background: var(--color1);
+  font-size: 20px;
+}
+
+.btn-home {
+  background: RGB(81, 139, 144);
+  border: none;
+  font-size: 30px;
+  width: 400px;
+  border-radius: 35px;
+  padding: 10px;
+}
+
+.btn-home:hover {
+  background: RGB(65, 179, 95);
+}
+
+.sidebar {
+  min-height: 100vh;
+  color: white;
+  width: 200px;
+}
+
+.logo {
+  padding: 0.875rem 1.25rem;
+}
+
+.logo p {
+  font-size: 20px;
+  color: aliceblue;
+  border-bottom: 2px solid rgba(211, 211, 211, 0.5);
+  width: 100%;
+}
+
+.menu {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.menu i {
+  padding: 10px;
+}
+
+.menu i:hover {
+  color: var(--color2);
+}
+
+.menu p {
+  font-size: 0.9375rem;
+  border: 1px solid #fff;
+}
+
+.menu p:hover {
+  color: var(--color2);
+}
+
+.item-list:hover {
+  color: var(--color2);
+  text-decoration: none;
+}
+.footer {
+  background: var(--color1);
+  margin-top: auto;
+}
+
+.colFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Componente lista de actividad -Marcos */
+
+.container-actividad {
+  border: 1px solid rgba(144, 144, 144, 0.678);
+  height: 37.5rem;
+  width: 31.25rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 0.3125rem 0.9375rem 0.125rem rgba(144, 144, 144, 0.144);
+  overflow-y: auto;
+}
+
+.title {
+  color: #000;
+  font-size: 0.9375rem;
+  padding: 0.9375rem;
+  border-bottom: 1px solid rgba(144, 144, 144, 0.678);
+  margin: 0;
+}
+
+/*Componente item en la lista de actividades -Marcos*/
+
+.item-exchange {
+  border-bottom: 1px solid rgba(144, 144, 144, 0.678);
+  height: 4.6875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  height: 100%;
+  padding: 0.3125rem;
+  width: 80%;
+}
+
+.description i {
+  font-size: 1.875rem;
+  color: var(--color1);
+}
+
+.description p {
+  font-size: 12px;
+  min-width: 12.5rem;
+  height: 3.75rem;
+  color: rgb(42, 42, 42);
+
+  margin-top: 0.9375rem;
+  word-break: break-all;
+  hyphens: auto;
+  margin-left: 1.5em;
+}
+
+.exchange {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.exchange p {
+  font-size: 10px;
+  margin-right: 0.9375rem;
+
+  width: 100%;
+  text-align: center;
+}
+
+/*Logo - Marcos*/
+.container-logo {
+  border: none;
+  width: 15rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: RGB(81, 139, 144);
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.198);
+}
+
+.logo-card {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text {
+  text-align: center;
+}
+
+h1 {
+  color: rgb(236, 236, 236);
+  font-size: 50px;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/*Componente saldo - Marcos*/
+
+.container-saldo {
+  border: 1px solid rgba(105, 105, 105, 0.328);
+  width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.5);
+}
+
+.saldo {
+  border-bottom: 1px solid rgba(105, 105, 105, 0.328);
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.saldo h1 {
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+}
+
+.saldo p {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.btns button {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color1);
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btns button:hover {
+  background-color: var(--color2);
+}
+
+.btns button:active {
+  transform: scale(0.97);
 }
