@@ -1,5 +1,6 @@
 import googleplay from '../../Assets/Image/googleplay.png';
 import appstore from '../../Assets/Image/appstore.png';
+import mobile from '../../Assets/Image/mobile.gif';
 
 const BannerHome2 = () => {
   return (
@@ -24,7 +25,7 @@ Descargá la aplicación en:</span>
 </div>
         </div>
         <div className="col">
-       imagen
+       <img src={mobile} alt=""/>
         </div>
       </div>
     </div>
