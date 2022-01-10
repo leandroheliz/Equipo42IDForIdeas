@@ -27,9 +27,11 @@ const SidebarHomebanking = () => {
     <Link to="/" className="text-decoration-none text-white">
       <i className="fas fa-cogs"></i> Configuración
     </Link>
+    <div className="salir p-4">
     <Link to="/" className="text-decoration-none text-white">
       <i class="fas fa-reply-all"></i> Salir
     </Link>
+    </div>
   </div>
 </div>
 </div>

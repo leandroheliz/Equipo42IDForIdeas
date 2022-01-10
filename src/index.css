@@ -51,7 +51,7 @@ body::-webkit-scrollbar-thumb {
 .sidebar {
   background-color: RGB(81, 139, 144);
   color: white;
-  height: 100vh;
+  height: 93vh;
   width: 230px;
 }
 
@@ -292,4 +292,8 @@ p {
 
 .avatarPerfil{
   max-width: 50px;
+}
+
+.salir{
+  margin-top: 495px;
 }
