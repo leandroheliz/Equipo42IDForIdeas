@@ -24,6 +24,7 @@ const Login = () => {
                          { estaRegistrandose ? "¿ Ya tienes cuenta? Inicia Sesión" : "¿No tienes cuenta? Registrate"}
                        </button> 
                     </form>
+                    <br/>
                 </div>
             </div>
         </div>

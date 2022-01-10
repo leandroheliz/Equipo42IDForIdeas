@@ -2,16 +2,21 @@
 const Contacto = () => {
   return (
     <div className="container text-center">
+      <br/>
+          <h3>Contactanos</h3>
       <div className="row">
         <div className="col colFooter">
-          <span><i className="fas fa-phone-volume mb-2"></i></span>
-          <span><i className="fas fa-map-marker-alt mb-2"></i></span>
-          <span><i className="fas fa-envelope mb-2"></i></span>
+          <span><i className="fas fa-phone-volume mb-2"></i> XXXXXXXXXXXXXXXXX</span>
+          <span><i className="fas fa-envelope mb-2"></i> XXXXXXXXXXXXXXXXX</span>
+          <span><i className="fas fa-map-marker-alt mb-2"></i> XXXXXXXXXXXXXXXXX</span>
         </div>
         <div className="col colFooter">
-          <h3>Contactanos</h3>
-    <input type="text" class="inputContacto mb-3" placeholder="Nombre y Apellido"/>
-        <button type="submit">Enviar</button>
+          <form className="col">
+            <input type="text" placeholder=" Nombre y apellido" className="form-control mb-2"/>
+            <input type="text" placeholder="Teléfono" className="form-control mb-2"/>
+            <input type="email" placeholder=" Email" className="form-control mb-2"/>
+          </form>
+        <button type="submit" className="btn btn-success">Enviar</button>
         </div>
       </div>
       <br/>
