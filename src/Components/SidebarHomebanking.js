@@ -7,7 +7,7 @@ const SidebarHomebanking = () => {
           <p>Bienvenido @usuario</p>
         </div>
         <div className="menu p-1">
-          <Link to="/perfilusuario" className="text-decoration-none text-white">
+          <Link to=":perfilusuario" className="text-decoration-none text-white">
             <i className="fas fa-user"></i> Mi Perfl
           </Link>
           <Link to="/" className="text-decoration-none text-white">
