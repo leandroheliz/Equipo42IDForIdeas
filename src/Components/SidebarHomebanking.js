@@ -1,10 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const SidebarHomebanking = () => {
   return (
-    <div className="row">
-      <div className="col-4 sidebar bg-dark h-100">
+      <div className="sidebar">
         <div className="logo text-center">
           <p>Bienvenido @usuario</p>
         </div>
@@ -15,7 +13,7 @@ const SidebarHomebanking = () => {
           <Link to="/" className="text-decoration-none text-white">
             <i className="fas fa-wallet"></i> Saldo
           </Link>
-          <Link to="/" className="text-decoration-none text-white">
+          <Link to="/cuentas" className="text-decoration-none text-white">
             <i className="fas fa-file-invoice-dollar"></i> Cuentas
           </Link>
           <Link to="/" className="text-decoration-none text-white">
@@ -33,8 +31,7 @@ const SidebarHomebanking = () => {
             </Link>
           </div>
         </div>
-      </div>
-    </div>
+ </div>
   );
 };
 

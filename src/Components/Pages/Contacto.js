@@ -1,3 +1,4 @@
+import BotonContacto from "../Botones/BotonContacto";
 
 const Contacto = () => {
   return (
@@ -16,7 +17,7 @@ const Contacto = () => {
             <input type="text" placeholder="Teléfono" className="form-control mb-2"/>
             <input type="email" placeholder=" Email" className="form-control mb-2"/>
           </form>
-        <button type="submit" className="btn btn-success">Enviar</button>
+        <BotonContacto/>
         </div>
       </div>
       <br/>

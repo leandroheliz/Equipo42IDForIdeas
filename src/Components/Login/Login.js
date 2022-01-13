@@ -1,33 +1,34 @@
-import React, { useState }from "react";
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link} from 'react-router-dom';
 
 const Login = () => {
 
-  const [ estaRegistrandose, setEstaRegistrandose ] = useState(false);
+  const [ estado, setEstado ] = useState(false);
 
     return(
-        <div className='container justify-content-center d-flex text-center'>
-            <div className='row'>
-                <div className='' >
-                <br/><br/>
-                    <h2>{ estaRegistrandose? "Registrate" : "Inicia Sesión"}</h2>
-                    <form className='form-group'> 
-                        <input type='text' placeholder='Usuario' className='form-control' style={{ width: '30rem' }} />
-                        <input type='password' placeholder='Contraseña' className='form-control mt-3' style={{ width: '30rem' }} />
-                        <br/>
-                       <Link to='/homebanking' type='submit' className='btn btn-success'>
-                         { estaRegistrandose ? "Registrate" : "Iniciar Sesión"}
-                       </Link>
-                       <br/><br/>
-                       <button type="submit" className='btn btn-success' 
-                          onClick={() => setEstaRegistrandose(!estaRegistrandose)}>
-                         { estaRegistrandose ? "¿ Ya tienes cuenta? Inicia Sesión" : "¿No tienes cuenta? Registrate"}
-                       </button> 
-                    </form>
-                    <br/>
-                </div>
-            </div>
-        </div>
+      <div className="container d-flex justify-content-center">
+      <form className="text-center">
+        <h4>{!estado ? "Iniciar Sesión" : "Registrate" }</h4>
+
+         <div className="mb-3">
+         <input type="email" className="form-control" id="formContactoNombre" aria-describedby="emailHelp" style={{width:"500px", fontSize:"25px"}}
+      placeholder=" Ingrese su email"/>
+         </div>
+
+        <div className="mb-3">
+      <input type="password" className="form-control" id="formContactoEmail" style={{width:"500px", fontSize:"25px"}} placeholder=" Ingrese su contraseña"/>
+          </div>
+
+    <Link to="/perfil" className="text-decoration-none">
+      <button class="cssbuttons-io-button" onClick={() => setEstado(!estado)}>{!estado ? "Iniciar Sesión" : "Registrate" }
+        <div className="icon">
+    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+         </div>
+        </button>
+          </Link>
+    <span class="btn" onClick={() => setEstado(!estado)}>{!estado ? "¿No tenes cuenta? Registrate" : "¿Tenes cuenta? Iniciar Sesión" }</span>
+  </form>
+      </div>
     )
 }
 
