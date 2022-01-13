@@ -1,3 +1,4 @@
+// import InicioHomebanking from "./InicioHomebanking";
 import React from "react";
 import NavHomebanking from "./NavHomebanking/NavHomebanking";
 import Logo from "../Logo/Logo";
@@ -9,6 +10,11 @@ import { Outlet } from "react-router-dom";
 const Homebanking = () => {
   return (
     <>
+    {/* <div className="row">
+      <div className="col-4 col-sm-2">
+      </div>
+        <InicioHomebanking/>
+    </div> */}
       <div className="row">
         <NavHomebanking />
         <div className="col-4 col-sm-2">

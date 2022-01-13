@@ -23,7 +23,7 @@ const NavHomebanking = () => {
   </Dropdown.Toggle>
   <Dropdown.Menu className="text-center">
     <Dropdown.Item href="#/action-1">
-      <Link to="/" className="text-decoration-none text-black"><i className="fas fa-user"></i> Mi Perfil</Link>
+      <Link to="/perfilusuario" className="text-decoration-none text-black"><i className="fas fa-user"></i> Mi Perfil</Link>
       </Dropdown.Item>
     <Dropdown.Item href="#/action-2">
     <Link to="/" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Configuración</Link>
