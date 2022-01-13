@@ -6,6 +6,7 @@ import About from '../Components/Pages/About';
 import PreguntasFrecuentes from '../Components/Pages/PreguntasFrecuentes';
 import Contacto from '../Components/Pages/Contacto';
 import Login from '../Components/Login/Login';
+import Cuenta from "../Components/Login/Cuenta";
 
 const DashboardRoutes = () => {
   return (
@@ -16,6 +17,7 @@ const DashboardRoutes = () => {
         <Route path="preguntas_frecuentes" element={<PreguntasFrecuentes />} />
         <Route path="contacto" element={<Contacto/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/cuenta" element={<Cuenta/>}/>
         <Route path="/" element={<Home/>} />
       </Routes>
       <Footer/>
