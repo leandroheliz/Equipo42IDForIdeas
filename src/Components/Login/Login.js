@@ -10,15 +10,11 @@ const Login = () => {
       <form className="text-center">
         <h4>{!estado ? "Iniciar Sesión" : "Registrate" }</h4>
 
-         <div className="mb-3">
-         <input type="email" className="form-control" id="formContactoNombre" aria-describedby="emailHelp" style={{width:"500px", fontSize:"25px"}}
+         <input type="email" className="form-control mb-3" id="formContactoNombre" aria-describedby="emailHelp" style={{width:"500px", fontSize:"25px"}}
       placeholder=" Ingrese su email"/>
-         </div>
-
-        <div className="mb-3">
-      <input type="password" className="form-control" id="formContactoEmail" style={{width:"500px", fontSize:"25px"}} placeholder=" Ingrese su contraseña"/>
-          </div>
-
+        
+      <input type="password" className="form-control mb-3" id="formContactoEmail" style={{width:"500px", fontSize:"25px"}} placeholder=" Ingrese su contraseña"/>
+        
     <Link to="/perfil" className="text-decoration-none">
       <button class="cssbuttons-io-button" onClick={() => setEstado(!estado)}>{!estado ? "Iniciar Sesión" : "Registrate" }
         <div className="icon">
@@ -26,7 +22,7 @@ const Login = () => {
          </div>
         </button>
           </Link>
-    <span class="btn" onClick={() => setEstado(!estado)}>{!estado ? "¿No tenes cuenta? Registrate" : "¿Tenes cuenta? Iniciar Sesión" }</span>
+    <span class="btn d-flex justify-content-end mt-5" onClick={() => setEstado(!estado)}>{!estado ? "¿No tenes cuenta? Registrate" : "¿Tenes cuenta? Iniciar Sesión" }</span>
   </form>
       </div>
     )
