@@ -5,7 +5,8 @@ import Home from '../Components/Pages/Home';
 import About from '../Components/Pages/About';
 import PreguntasFrecuentes from '../Components/Pages/PreguntasFrecuentes';
 import Contacto from '../Components/Pages/Contacto';
-import Registro from '../Components/Login/Registro';
+import FormLogin from '../Components/Login/FormLogin';
+import FormRegistro from '../Components/Login/FormRegistro';
 
 const Rutas = () => {
   return (
@@ -16,7 +17,8 @@ const Rutas = () => {
         <Route path="/about" element={<About />}/>
         <Route path="/preguntas_frecuentes" element={<PreguntasFrecuentes />}/>
         <Route path="/contacto" element={<Contacto />}/>
-        <Route path="/registro" element={<Registro />}/>
+        <Route path="/login" element={<FormLogin />}/>
+        <Route path="/registro" element={<FormRegistro />}/>
       </Routes>
       <Footer/>
     </>
@@ -24,3 +26,6 @@ const Rutas = () => {
 };
 
 export default Rutas;
+
+//estan las rutas generales y las del homebanking
+
