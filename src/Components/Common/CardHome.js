@@ -2,7 +2,7 @@
 const CardHome = () => {
   return (
     <div className="container text-center">
-      <br/>
+      {/* <br/>
   <div className="card-group">
   <div className="card borderCard">
     <img src="..." className="card-img-top" alt="..." />
@@ -93,7 +93,7 @@ const CardHome = () => {
     </div>
   </div>
 </div>
-<br/>
+<br/> */}
     </div>
   )
 }

@@ -8,13 +8,13 @@ const FormContacto = () => {
         <div className="contact-body">
           <div className="contact-links">
             <span>
-              <i className="fas fa-phone-volume mb-2"></i> XXXXXXXXXXXXXXXXX
+              <i className="fas fa-phone-volume mb-2"></i> +5942741522
             </span>
             <span>
-              <i className="fas fa-envelope mb-2"></i> XXXXXXXXXXXXXXXXX
+              <i className="fas fa-envelope mb-2"></i> hola@plusbank.com
             </span>
             <span>
-              <i className="fas fa-map-marker-alt mb-2"></i> XXXXXXXXXXXXXXXXX
+              <i className="fas fa-map-marker-alt mb-2"></i> Evergreen Terrace 742
             </span>
           </div>
           <div className="contact-form">

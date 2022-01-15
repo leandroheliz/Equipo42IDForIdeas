@@ -1,6 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
 import Home from "../Components/Pages/Home";
 import About from "../Components/Pages/About";
 import PreguntasFrecuentes from "../Components/Pages/PreguntasFrecuentes";
@@ -24,5 +22,3 @@ const Rutas = () => {
 };
 
 export default Rutas;
-
-//estan las rutas generales y las del homebanking

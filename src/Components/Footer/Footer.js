@@ -44,7 +44,7 @@ const Footer = () => {
       </span>
       <hr />
       <span className="text-white mb-3 ">
-        &copy; {new Date().getFullYear()} Copyright | Plus Bank & Grupo 42 S.A
+        &copy; {new Date().getFullYear()} Copyright | Plus Bank S.A & Grupo 42
       </span>
     </div>
   );
