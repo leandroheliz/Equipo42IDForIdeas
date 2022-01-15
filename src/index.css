@@ -22,11 +22,11 @@ body {
 
 body::-webkit-scrollbar {
   width: 8px;
-  background: var(--color1);
+  background: var(--color2);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: RGB(65, 179, 95);
+  background: RGB(81, 139, 144);
   border-radius: 10px;
 }
 
