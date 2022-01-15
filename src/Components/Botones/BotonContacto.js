@@ -1,11 +1,11 @@
-import './BotonContacto.css';
+import "./BotonContacto.css";
 
 const BotonContacto = () => {
   return (
-    <button className="buttonContacto">
-      Enviar
-    </button>
-  )
-}
+    <div className="container-boton-contacto">
+      <button className="buttonContacto">Enviar</button>
+    </div>
+  );
+};
 
 export default BotonContacto;

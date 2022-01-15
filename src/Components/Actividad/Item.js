@@ -6,9 +6,9 @@ const Item = () => {
       <div className="description">
         <i class="fas fa-money-check-alt"></i>
         <p>
-          DescripcionDescripcionDescripcionDescripcionDescripcion Descripcion
-          Descripcion
-          DescripcionDescripcionDescripcionDescripcionDescripcionDescripcionDescripcion
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+          voluptatum laborum.
         </p>
       </div>
       <div className="exchange">

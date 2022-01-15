@@ -7,6 +7,7 @@
 :root {
   --color1: RGB(81, 139, 144);
   --color2: RGB(65, 179, 95);
+  --color3: rgb(70, 70, 70);
 }
 
 /* 518b90 */
@@ -99,7 +100,6 @@ body::-webkit-scrollbar-thumb {
 .footer {
   background: var(--color1);
   width: 100%;
-
 }
 
 .colFooter {
@@ -300,10 +300,14 @@ p {
   margin-top: 300px;
 }
 
+.login-container {
+  height: 100vh;
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80%;
 }
 
 .form-login h4 {
@@ -358,6 +362,9 @@ p {
   text-decoration: none;
 }
 
+.registro-container {
+  height: 100vh;
+}
 
 .form-registro h4 {
   text-align: center;
@@ -411,10 +418,90 @@ p {
   text-decoration: none;
 }
 
+.registro-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
-.registro-grid{
-  display:grid;
-  grid-template-columns: repeat(2, 1fr) ;
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.contact-box {
+  text-align: center;
+  border: none;
+  padding: 30px;
+  background-color: var(--color3);
+  color: aliceblue;
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact-body {
+  border: 1px solid var(--color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.25rem;
+  margin: 0.9375rem;
+}
+
+.contact-links span i {
+  font-size: 20px;
+  color: var(--color2);
+  cursor: pointer;
+  padding: 0.3125rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.contact-links span i:hover {
+  transform: scale(0.97);
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  margin: 0.9375rem;
+}
+
+.contact-form input {
+  padding: 10px;
+  margin: 15px;
+  background-color: transparent;
+  color: aliceblue;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--color2);
+  transition: all 0.2s ease-in;
+  font-size: 18px;
+}
+
+.contact-form input:focus {
+  outline: none;
+}
+
+.contact-form input:focus-within {
+  background-color: transparent;
+}
+
+.contact-form input:hover {
+  -webkit-box-shadow: 0px 10px 10px -4px rgba(65, 179, 95, 0.39);
+  box-shadow: 0px 10px 10px -4px rgba(65, 179, 95, 0.39);
 }
 
 .cssbuttons-io-button {
