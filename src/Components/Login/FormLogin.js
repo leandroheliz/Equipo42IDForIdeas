@@ -19,7 +19,7 @@ const FormLogin = () => {
           placeholder=" Ingrese su password"
         />
 
-        <Link to="/homebanking" className="text-decoration-none">
+        <Link to="/appHomebanking" className="text-decoration-none">
           <button className="cssbuttons-io-button">
             Iniciar Sesion
             <div className="icon">

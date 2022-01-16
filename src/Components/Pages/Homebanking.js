@@ -1,11 +1,8 @@
-import NavHomebanking from "./NavHomebanking/NavHomebanking";
 
 const Homebanking = () => {
   return (
     <>
-      <div className="row">
-        <NavHomebanking />
-      </div>
+
     </>
   );
 };

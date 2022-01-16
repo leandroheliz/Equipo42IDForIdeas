@@ -4,7 +4,7 @@ const FormContacto = () => {
   return (
     <div className="contact-container">
       <div className="contact-box">
-        <h3>Contactanos</h3>
+      <h3>Contactanos</h3>
         <div className="contact-body">
           <div className="contact-links">
             <span>
@@ -24,16 +24,16 @@ const FormContacto = () => {
                 placeholder=" Nombre y apellido"
                 className="form-control mb-2"
               />
-              <input
-                type="text"
-                placeholder="Teléfono"
-                className="form-control mb-2"
-              />
-              <input
-                type="email"
-                placeholder=" Email"
-                className="form-control mb-2"
-              />
+                <input
+                  type="email"
+                  placeholder=" Email"
+                  className="form-control mb-2"
+                />
+                <div className='textarea' >
+                  <label for='textarea' > Dejanos un mansaje(opcional) </label>
+              <textarea id='textarea'  className='m-2 ' cols='55' rows='5' ></textarea>
+
+                </div>
               <BotonContacto />
             </form>
           </div>

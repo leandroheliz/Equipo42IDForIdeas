@@ -4,8 +4,6 @@ import fotoPerfil from '../../PerfilUsuario/Img/perfil.jpg';
 
 const NavHomebanking = () => {
   return (
-    <div className="container-fluid"> 
-    <div className="row">
       <nav className="navbar navbar-expand-lg navbar-light navBarHomebanking">
   <div className="container-fluid">
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,42 +34,6 @@ const NavHomebanking = () => {
     </div>
   </div>
 </nav>
-
-      <div className="col">
-      <div className="sidebar">
-        <div className="logo text-center">
-          <p>Bienvenido @usuario</p>
-        </div>
-        <div className="menu p-1">
-          <Link to="/mi_perfil" className="text-decoration-none text-white">
-            <i className="fas fa-user"></i> Mi Perfl
-          </Link>
-          <Link to="/saldo" className="text-decoration-none text-white">
-            <i className="fas fa-wallet"></i> Saldo
-          </Link>
-          <Link to="/cuentas" className="text-decoration-none text-white">
-            <i className="fas fa-file-invoice-dollar"></i> Cuentas
-          </Link>
-          <Link to="/" className="text-decoration-none text-white">
-            <i className="far fa-credit-card"></i> Tarjetas
-          </Link>
-          <Link to="/" className="text-decoration-none text-white">
-            <i className="fas fa-tachometer-alt"></i> Movimientos
-          </Link>
-          <Link to="/configuracion" className="text-decoration-none text-white">
-            <i className="fas fa-cogs"></i> Configuración
-          </Link>
-          <div className="salir p-4">
-            <Link to="/" className="text-decoration-none text-white">
-              <i class="fas fa-reply-all"></i> Salir
-            </Link>
-          </div>
-        </div>
- </div>
-
-      </div>
-    </div>
-    </div>
   )
 }
 

@@ -56,7 +56,7 @@ body::-webkit-scrollbar-thumb {
   background-color: RGB(81, 139, 144);
   color: white;
   height: 100vh;
-  width: 230px;
+  width: 14rem;
 }
 
 .logo {
@@ -103,6 +103,23 @@ body::-webkit-scrollbar-thumb {
 .footer {
   background: var(--color1);
   width: 100%;
+  margin: 0 auto;
+}
+
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrap{
+  flex: 1;
+}
+
+main{
+  max-width: 1000px;
+  margin: 50px auto;
+  overflow: hidden;
 }
 
 .colFooter {
@@ -292,7 +309,7 @@ p {
 }
 
 .navBarHomebanking {
-  background-color: RGB(81, 139, 144);
+  background-color: rgba(81, 139, 144,0.9);
 }
 
 .avatarPerfil {
@@ -444,7 +461,6 @@ p {
 }
 
 .contact-body {
-  border: 1px solid var(--color2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -480,6 +496,7 @@ p {
   flex-direction: column;
   padding: 3rem;
   margin: 0.9375rem;
+  color:aliceblue;
 }
 
 .contact-form input {
@@ -494,18 +511,40 @@ p {
   font-size: 18px;
 }
 
-.contact-form input:focus {
+.contact-form form input:focus {
   outline: none;
+  color:aliceblue;
 }
 
-.contact-form input:focus-within {
+.contact-form form input{
+  color:aliceblue;
+}
+
+.contact-form form input:focus-within {
   background-color: transparent;
+  color:aliceblue;
 }
 
 .contact-form input:hover {
   -webkit-box-shadow: 0px 10px 10px -4px rgba(65, 179, 95, 0.39);
   box-shadow: 0px 10px 10px -4px rgba(65, 179, 95, 0.39);
 }
+
+.textarea{
+  margin-left:30px;
+  display: flex;
+  justify-content:center;
+  margin-top:20px;
+}
+
+.textarea textarea{
+  padding:0.3125rem;
+  background-color:rgba(105, 105, 105, 0.596);
+  color:aliceblue; 
+  border: 2px solid var(--color2)
+}
+
+
 
 .cssbuttons-io-button {
   background: var(--color2);
@@ -558,4 +597,20 @@ p {
 
 .cssbuttons-io-button:active .icon {
   transform: scale(0.95);
+}
+
+.homebankingfondo{
+ background: var(--color1);
+ height: 100vh;
+ width:100vw;
+ display: flex;
+ justify-content: center;
+}
+
+.flex{
+  display: flex;
+}
+
+.content{
+  width: 100%;
 }
