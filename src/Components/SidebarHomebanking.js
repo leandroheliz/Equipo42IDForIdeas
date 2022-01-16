@@ -10,19 +10,19 @@ const SidebarHomebanking = () => {
           <NavLink to="/perfil_usuario" className="text-decoration-none text-white">
             <i className="fas fa-user"></i> Mi Perfl
           </NavLink>
-          <NavLink to="/actividad" className="text-decoration-none text-white">
+          <NavLink to="/saldo" className="text-decoration-none text-white">
             <i className="fas fa-wallet"></i> Saldo
           </NavLink>
           <NavLink to="/cuentas" className="text-decoration-none text-white">
             <i className="fas fa-file-invoice-dollar"></i> Cuentas
           </NavLink>
-          <NavLink to="/" className="text-decoration-none text-white">
+          <NavLink to="/tarjetas" className="text-decoration-none text-white">
             <i className="far fa-credit-card"></i> Tarjetas
           </NavLink>
-          <NavLink to="/" className="text-decoration-none text-white">
+          <NavLink to="/movimientos" className="text-decoration-none text-white">
             <i className="fas fa-tachometer-alt"></i> Movimientos
           </NavLink>
-          <NavLink to="/" className="text-decoration-none text-white">
+          <NavLink to="/configuracion" className="text-decoration-none text-white">
             <i className="fas fa-cogs"></i> Configuración
           </NavLink>
           <div className="salir p-4">

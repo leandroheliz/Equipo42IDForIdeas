@@ -7,7 +7,7 @@ const NavHomebanking = () => {
       <nav className="navbar navbar-expand-lg navbar-light navBarHomebanking">
   <div className="container-fluid">
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon" />
+    <i className="fas fa-user-cog"></i>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -22,10 +22,10 @@ const NavHomebanking = () => {
   </Dropdown.Toggle>
   <Dropdown.Menu className="text-center">
     <Dropdown.Item href="#/action-1">
-      <Link to="/perfilusuario" className="text-decoration-none text-black"><i className="fas fa-user"></i> Mi Perfil</Link>
+      <Link to="/perfil_usuario" className="text-decoration-none text-black"><i className="fas fa-user"></i> Mi Perfil</Link>
       </Dropdown.Item>
     <Dropdown.Item href="#/action-2">
-    <Link to="/" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Configuración</Link>
+    <Link to="/configuracion" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Configuración</Link>
     </Dropdown.Item>
     <Dropdown.Item href="#/action-3"><Link to="/" className="text-decoration-none text-black"><i class="fas fa-reply-all"></i> Cerrar Sesión</Link>
     </Dropdown.Item>

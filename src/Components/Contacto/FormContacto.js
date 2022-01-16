@@ -32,7 +32,6 @@ const FormContacto = () => {
                 <div className='textarea' >
                   <label for='textarea' > Dejanos un mansaje(opcional) </label>
               <textarea id='textarea'  className='m-2 ' cols='55' rows='5' ></textarea>
-
                 </div>
               <BotonContacto />
             </form>

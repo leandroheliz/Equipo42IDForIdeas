@@ -58,7 +58,7 @@ const FormRegistro = () => {
       </div>
 
    
-        <Link to="/homebanking" className="text-decoration-none">
+        <Link to="/AppHomebanking" className="text-decoration-none">
           <button className="cssbuttons-io-button">
             Crear cuenta
             <div className="icon">

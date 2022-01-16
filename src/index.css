@@ -614,3 +614,12 @@ p {
 .content{
   width: 100%;
 }
+
+.error404{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: RGBA(81, 139, 144,0.8);
+  height: 100vh;
+  width: 100%;
+}
