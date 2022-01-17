@@ -22,12 +22,27 @@ const NavHomebanking = () => {
   </Dropdown.Toggle>
   <Dropdown.Menu className="text-center">
     <Dropdown.Item href="#/action-1">
-      <Link to="/perfil_usuario" className="text-decoration-none text-black"><i className="fas fa-user"></i> Mi Perfil</Link>
+      <Link to="" className="text-decoration-none text-black"> <i className="fas fa-home"></i> Inicio</Link>
       </Dropdown.Item>
     <Dropdown.Item href="#/action-2">
-    <Link to="/configuracion" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Configuración</Link>
+    <Link to="saldo" className="text-decoration-none text-black"><i className="fas fa-user"></i> Saldo</Link>
     </Dropdown.Item>
-    <Dropdown.Item href="#/action-3"><Link to="/" className="text-decoration-none text-black"><i class="fas fa-reply-all"></i> Cerrar Sesión</Link>
+    <Dropdown.Item href="#/action-3">
+    <Link to="cuentas" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Cuentas</Link>
+    </Dropdown.Item>
+    <Dropdown.Item href="#/action-4">
+    <Link to="tarjetas" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Tarjetas</Link>
+    </Dropdown.Item>
+    <Dropdown.Item href="#/action-5">
+    <Link to="movimientos" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Movimientos</Link>
+    </Dropdown.Item>
+    <Dropdown.Item href="#/action-6">
+    <Link to="profile" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Mi Perfil</Link>
+    </Dropdown.Item>
+    <Dropdown.Item href="#/action-7">
+    <Link to="configuracion" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Configuración</Link>
+    </Dropdown.Item>
+    <Dropdown.Item href="#/action-8"><Link to="/" className="text-decoration-none text-black"><i class="fas fa-reply-all"></i> Cerrar Sesión</Link>
     </Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>

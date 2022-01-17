@@ -1,24 +1,20 @@
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import SidebarHomebanking from '../SidebarHomebanking';
 import NavHomebanking from './NavHomebanking/NavHomebanking';
-import Saldo from '../Saldo/Saldo';
+import {Outlet } from "react-router-dom";
+
 
 const AppHomebanking = () => {
 
   return (
-    <BrowserRouter>
+    <>
     <NavHomebanking/>
     <div className="flex">
     <SidebarHomebanking/>
-    <div className="content">
-     <Routes>
-     <Route path="sidebarHomebanking/:saldo" element={<Saldo />}/>
-        {/* <Outlet/> */}
-      </Routes> 
-  
+    <div className="content d-flex justify-content-center align-items-center">
+    <Outlet/>
     </div>
     </div>
-    </BrowserRouter>
+    </>
   )
 }
 

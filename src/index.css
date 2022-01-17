@@ -623,3 +623,8 @@ p {
   height: 100vh;
   width: 100%;
 }
+
+.colPerfil{
+  display: flex;
+  flex-direction: column;
+}
