@@ -33,8 +33,3 @@ const AppRouter = () => {
 };
 
 export default AppRouter;
-
-//en movimientos ponemos transacciones tipo transferencias, etc
-//queda todo muy al centro, podriamos usar un margin para que no quede muy muy al centro
-// tambien podemos rellenar los espacios en blanco con cards
-//Okay
