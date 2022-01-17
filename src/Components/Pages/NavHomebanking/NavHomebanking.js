@@ -12,7 +12,9 @@ const NavHomebanking = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
         <li className="nav-item">
+          <Link to="" className="text-decoration-none text-black">
          <span style={{fontSize: "25px", color: "white"}}>Plus+</span><span style={{fontSize: "25px"}}>Bank</span>
+          </Link>
         </li>
       </ul>
 <Dropdown>
@@ -28,16 +30,16 @@ const NavHomebanking = () => {
     <Link to="saldo" className="text-decoration-none text-black"><i className="fas fa-user"></i> Saldo</Link>
     </Dropdown.Item>
     <Dropdown.Item href="#/action-3">
-    <Link to="cuentas" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Cuentas</Link>
+    <Link to="cuentas" className="text-decoration-none text-black"><i className="fas fa-file-invoice-dollar"></i>  Cuentas</Link>
     </Dropdown.Item>
     <Dropdown.Item href="#/action-4">
-    <Link to="tarjetas" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Tarjetas</Link>
+    <Link to="tarjetas" className="text-decoration-none text-black"><i className="far fa-credit-card"></i> Tarjetas</Link>
     </Dropdown.Item>
     <Dropdown.Item href="#/action-5">
-    <Link to="movimientos" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Movimientos</Link>
+    <Link to="movimientos" className="text-decoration-none text-black"> <i className="fas fa-tachometer-alt"></i> Movimientos</Link>
     </Dropdown.Item>
     <Dropdown.Item href="#/action-6">
-    <Link to="profile" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Mi Perfil</Link>
+    <Link to="profile" className="text-decoration-none text-black"> <i className="fas fa-user"></i>Mi Perfil</Link>
     </Dropdown.Item>
     <Dropdown.Item href="#/action-7">
     <Link to="configuracion" className="text-decoration-none text-black"><i className="fas fa-cogs"></i> Configuración</Link>

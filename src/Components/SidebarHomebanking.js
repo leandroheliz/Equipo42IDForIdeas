@@ -19,6 +19,9 @@ const SidebarHomebanking = () => {
           <NavLink to="cuentas" className="text-decoration-none text-white">
             <i className="fas fa-file-invoice-dollar"></i> Cuentas
           </NavLink>
+          <NavLink to="enviar_dinero" className="text-decoration-none text-white">
+          <i className="far fa-share-square"></i> Enviar Dinero
+          </NavLink>
           <NavLink to="tarjetas" className="text-decoration-none text-white">
             <i className="far fa-credit-card"></i> Tarjetas
           </NavLink>

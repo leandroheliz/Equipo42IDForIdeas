@@ -8,6 +8,7 @@ import Configuracion from "../Components/Pages/Homebanking/Configuracion";
 import Tarjeta from '../Components/Tarjetas/Tarjeta'
 import Cuentas from '../Components/Cuentas/Cuentas'
 import Movimientos from "../Components/Pages/Homebanking/Movimientos";
+import EnviarDinero from "../Components/Pages/Homebanking/EnviarDinero";
 
 const AppRouter = () => {
   return (
@@ -22,6 +23,7 @@ const AppRouter = () => {
           <Route path="tarjetas" element={<Tarjeta />} />
           <Route path="cuentas" element={<Cuentas />} />
           <Route path="movimientos" element={<Movimientos />} />
+          <Route path="enviar_dinero" element={<EnviarDinero />} />
         </Route>
         <Route path="/*" element={<Rutas />} />
       </Routes>

@@ -1,3 +1,5 @@
+import usuariosFinancieros from '../../Assets/Image/usuariosFinancieros.jpg';
+
 const Footer = () => {
   return (
     <div className="footer text-center">
@@ -23,10 +25,10 @@ const Footer = () => {
           <span>
             <h4>Información legal</h4>
           </span>
-          <span>Atención al usuario</span>
-          <span>Información al usuario</span>
           <span>Régimen de transparencia del BCRA</span>
-          <span>Alyc</span>
+          <a href="https://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp" target="_blank">
+          <img src={usuariosFinancieros} alt="" />
+          </a>
         </div>
         <div className="col colFooter">
           <span>
