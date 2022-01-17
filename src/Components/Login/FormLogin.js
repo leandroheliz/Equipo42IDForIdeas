@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const FormLogin = () => {
   return (
-    <div className="container">
+    <div className="container2">
       <form className="form-login">
         <h4>Iniciar sesion</h4>
 

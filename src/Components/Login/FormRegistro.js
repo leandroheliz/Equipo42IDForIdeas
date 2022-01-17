@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const FormRegistro = () => {
   return (
-    <div className="container">
+    <div className="container2">
       <form className="form-registro">
         <h4>Register</h4>
         
