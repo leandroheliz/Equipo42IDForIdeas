@@ -261,7 +261,7 @@ p {
 /*Componente saldo - Marcos*/
 
 .container-saldo {
-  border: 1px solid rgba(105, 105, 105, 0.328);
+  border: 1px solid rgba(81, 139, 144,0.9);
   width: 350px;
   height: 200px;
   display: flex;
@@ -332,10 +332,8 @@ p {
   height: 100vh;
 }
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80%;
+  height: 100%;
+  margin-top: 25px;
 }
 
 .form-login h4 {

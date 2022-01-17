@@ -1,4 +1,4 @@
-import FormContacto from "../Contacto/FormContacto";
+import FormContacto from "../../Contacto/FormContacto";
 
 const Contacto = () => {
   return (

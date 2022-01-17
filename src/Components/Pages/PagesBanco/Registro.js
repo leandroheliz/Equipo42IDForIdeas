@@ -1,5 +1,5 @@
 import React from "react";
-import FormRegistro from "../Login/FormRegistro";
+import FormRegistro from "../../Login/FormRegistro";
 
 const Registro = () => {
   return (

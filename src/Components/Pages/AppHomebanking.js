@@ -1,5 +1,5 @@
-import SidebarHomebanking from '../SidebarHomebanking';
-import NavHomebanking from './NavHomebanking/NavHomebanking';
+import SidebarHomebanking from './PagesHomebanking/SidebarHomebanking';
+import NavHomebanking from './PagesHomebanking/NavHomebanking/NavHomebanking';
 import {Outlet } from "react-router-dom";
 
 

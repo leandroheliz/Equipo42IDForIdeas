@@ -1,6 +1,6 @@
 import { Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import fotoPerfil from '../../PerfilUsuario/Img/perfil.jpg';
+import fotoPerfil from '../../PagesHomebanking/PerfilUsuario/Img/perfil.jpg';
 
 const NavHomebanking = () => {
   return (

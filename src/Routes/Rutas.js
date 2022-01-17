@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "../Components/Pages/Home";
-import About from "../Components/Pages/About";
-import PreguntasFrecuentes from "../Components/Pages/PreguntasFrecuentes";
-import Contacto from "../Components/Pages/Contacto";
-import Login from "../Components/Pages/Login";
-import Registro from "../Components/Pages/Registro";
+import Home from "../Components/Pages/PagesBanco/Home";
+import About from "../Components/Pages/PagesBanco/About";
+import PreguntasFrecuentes from "../Components/Pages/PagesBanco/PreguntasFrecuentes"
+import Contacto from "../Components/Pages/PagesBanco/Contacto";
+import Login from "../Components/Pages/PagesBanco/Login";
+import Registro from "../Components/Pages/PagesBanco/Registro";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
-import Error404 from "../Components/Error404";
+import Error404 from "../Components/Pages/PagesBanco/Error404";
 
 const Rutas = () => {
   return (
