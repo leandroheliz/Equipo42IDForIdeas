@@ -1,9 +1,11 @@
 
+
 const Tarjeta = () => {
-    return(
-    <>
-    </>
-    )
+  return (
+    <div>
+      tarjetas
+    </div>
+  )
 }
 
-export default Tarjeta;
+export default Tarjeta

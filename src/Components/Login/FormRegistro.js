@@ -4,7 +4,7 @@ const FormRegistro = () => {
   return (
     <div className="container2">
       <form className="form-registro">
-        <h4>Register</h4>
+        <h4>Registrate</h4>
         
       <div className='registro-grid' >
       <input

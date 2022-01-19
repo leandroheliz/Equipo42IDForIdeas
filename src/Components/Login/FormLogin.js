@@ -5,7 +5,7 @@ const FormLogin = () => {
   return (
     <div className="container2">
       <form className="form-login">
-        <h4>Iniciar sesion</h4>
+        <h4>Iniciar Sesión</h4>
 
         <input
           type="email"
