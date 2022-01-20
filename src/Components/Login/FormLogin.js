@@ -1,7 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const FormLogin = () => {
+
   return (
     <div className="container2">
       <form className="form-login">
