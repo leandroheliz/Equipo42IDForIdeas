@@ -5,8 +5,8 @@ import Saldo from "../Components/Pages/PagesHomebanking/Saldo/Saldo";
 import PerfilUsuario from "../Components/Pages/PagesHomebanking/PerfilUsuario/PerfilUsuario";
 import Actividad from "../Components/Pages/PagesHomebanking/Actividad/Actividad";
 import Configuracion from "../Components/Pages/PagesHomebanking/Configuracion";
-import Tarjeta from '../Components/Pages/PagesHomebanking/Tarjetas/Tarjeta'
-import Cuentas from '../Components/Pages/PagesHomebanking/Cuentas/Cuentas'
+import Tarjeta from "../Components/Pages/PagesHomebanking/Tarjetas/Tarjeta";
+import Cuentas from "../Components/Pages/PagesHomebanking/Cuentas/Cuentas";
 import Movimientos from "../Components/Pages/PagesHomebanking/Movimientos";
 import EnviarDinero from "../Components/Pages/PagesHomebanking/EnviarDinero";
 import Inicio from "../Components/Pages/PagesHomebanking/Inicio";

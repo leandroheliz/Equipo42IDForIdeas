@@ -1,63 +1,45 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const FormRegistro = () => {
   return (
     <div className="container2">
       <form className="form-registro">
         <h4>Registrate</h4>
-        
-      <div className='registro-grid' >
-      <input
-          type="text"
-          id="formContactoEmail"
-          placeholder=" Ingrese su nombre"
-        />
 
-        <input
-          type="text"
-          id="formContactoApellido"
-          placeholder=" Ingrese su apellido"
-        />
+        <div className="registro-grid">
+          <input
+            type="text"
+            id="formContactoEmail"
+            placeholder=" Ingrese su nombre"
+          />
 
-        <input
-          type="email"
-          id="formContactoEmail"
-          placeholder=" Ingrese su email"
-        />
+          <input
+            type="text"
+            id="formContactoApellido"
+            placeholder=" Ingrese su apellido"
+          />
 
-        <input
-          type="password"
-          id="formContactoPass"
-          placeholder="Password"
-        />
+          <input
+            type="email"
+            id="formContactoEmail"
+            placeholder=" Ingrese su email"
+          />
 
-        <input
-          type="password"
-          id="formContactoPass2"
-          placeholder="Confirme su password"
-        />
+          <input type="password" id="formContactoPass" placeholder="Password" />
 
+          <input
+            type="password"
+            id="formContactoPass2"
+            placeholder="Confirme su password"
+          />
 
-        <input
-          type="tel"
-          id="formContactoTel"
-          placeholder="Telefono"
-        />
+          <input type="tel" id="formContactoTel" placeholder="Telefono" />
 
-        <input
-          type="text"
-          id="formContactoPais"
-          placeholder="Pais"
-        />
+          <input type="text" id="formContactoPais" placeholder="Pais" />
 
-        <input
-          type="text"
-          id="formContactoDni"
-          placeholder="DNI"
-        />
-      </div>
+          <input type="text" id="formContactoDni" placeholder="DNI" />
+        </div>
 
-   
         <Link to="/AppHomebanking" className="text-decoration-none">
           <button className="cssbuttons-io-button">
             Crear cuenta
@@ -86,6 +68,5 @@ const FormRegistro = () => {
     </div>
   );
 };
-
 
 export default FormRegistro;

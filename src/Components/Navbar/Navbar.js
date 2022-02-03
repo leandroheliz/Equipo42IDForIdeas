@@ -1,11 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
+import logo from '../../Assets/Image/BankPlus.png';
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light navBar">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <i className="fas fa-university"></i> Plus Bank
+        <img src={logo} alt="" style={{width:"100px", backgroundColor:"black"}}/>
         </Link>
         <button
           className="navbar-toggler"
