@@ -1,38 +1,64 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import cors from "cors";
 
 const FormLogin = () => {
   return (
     <>
       <Formik
-        initialValues={{ formContactoEmail: "", formContactoPass: "" }}
-        validate={(valores) => {
+        initialValues={{ formLoginEmail: "", formLoginPass: "" }}
+        validate={(values) => {
           let errores = {};
 
           //Validacion email
-          if (!valores.formContactoEmail) {
-            errores.formContactoEmail = "Por favor ingresa un email";
+          if (!values.formLoginEmail) {
+            errores.formLoginEmail = "Por favor ingresa un email";
           } else if (
             !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(
-              valores.formContactoEmail
+              values.formLoginEmail
             )
           ) {
-            errores.formContactoEmail = "Ingrese un formato de email valido";
+            errores.formLoginEmail = "Ingrese un formato de email valido";
           }
 
           //Validacion password
-          if (!valores.formContactoPass) {
-            errores.formContactoPass = "Por favor ingresa una password";
-          } else if (!/^[0-9]{3}$/.test(valores.formContactoPass)) {
-            errores.formContactoPass = "Ingrese una contraseña valida";
+          if (!values.formLoginPass) {
+            errores.formLoginPass = "Por favor ingresa una password";
+          } else if (!/^[0-9]{3}$/.test(values.formLoginPass)) {
+            errores.formLoginPass = "Ingrese una contraseña valida";
           }
 
           return errores;
         }}
-        onSubmit={(valores, { resetForm }) => {
+        onSubmit={(values, { resetForm }) => {
           resetForm();
           console.log("Enviado");
+          const user = {
+            email: values.formLoginEmail,
+            password: values.formLoginPass,
+          };
+
+          const getToken = () => {
+            fetch(
+              "https://backend-equipo42-idf-or-ideas.vercel.app/user/token",
+              {
+                method: "POST",
+                mode: "no-cors",
+                headers: {
+                  Accept: "application/json",
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  email: values.formLoginEmail,
+                  password: values.formLoginPass,
+                }),
+              }
+            ).then((res) => {
+              console.log(res);
+            });
+          };
+          getToken();
         }}
       >
         {({ errors }) => (
@@ -42,27 +68,27 @@ const FormLogin = () => {
 
               <Field
                 type="email"
-                id="formContactoEmail"
+                id="formLoginEmail"
                 placeholder=" Ingrese su email"
-                name="formContactoEmail"
+                name="formLoginEmail"
               />
               <ErrorMessage
-                name="formContactoEmail"
+                name="formLoginEmail"
                 component={() => (
-                  <div className="error">{errors.formContactoEmail}</div>
+                  <div className="error">{errors.formLoginEmail}</div>
                 )}
               />
 
               <Field
                 type="password"
-                id="formContactoPass"
+                id="formLoginPass"
                 placeholder=" Ingrese su password"
-                name="formContactoPass"
+                name="formLoginPass"
               />
               <ErrorMessage
-                name="formContactoPass"
+                name="formLoginPass"
                 component={() => (
-                  <div className="error">{errors.formContactoPass}</div>
+                  <div className="error">{errors.formLoginPass}</div>
                 )}
               />
 
@@ -75,56 +101,7 @@ const FormLogin = () => {
           </div>
         )}
 
-        {/*} {({
-          handleSubmit,
-          touched,
-          errors,
-          values,
-          handleChange,
-          handleBlur,
-        }) => (
-          <div className="container2">
-            <form className="form-login" onSubmit={handleSubmit}>
-              {console.log(touched)}
-
-              <h4>Iniciar Sesión</h4>
-
-              <input
-                type="email"
-                id="formContactoEmail"
-                placeholder=" Ingrese su email"
-                name="formContactoEmail"
-                value={values.formContactoEmail}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {errors.formContactoEmail && (
-                <div className="error">{errors.formContactoEmail}</div>
-              )}
-
-              <input
-                type="password"
-                id="formContactoPass"
-                placeholder=" Ingrese su password"
-                name="formContactoPass"
-                value={values.password}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {errors.formContactoPass && (
-                <div className="error">{errors.formContactoPass}</div>
-              )}
-
-              <button type="submit">Enviar</button>
-
-              <Link to="/registro" className="text-decoration-none mt-4">
-                <span className="text-decoration-none">
-                  No tienes cuenta? Registrate
-                </span>
-              </Link>
-            </form>
-          </div>
-        )}*/}
+      
       </Formik>
     </>
   );

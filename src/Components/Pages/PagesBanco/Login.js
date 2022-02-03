@@ -1,11 +1,12 @@
 import React from "react";
 import FormLogin from "../../Login/FormLogin";
+import Actividad from "../PagesHomebanking/Actividad/Actividad";
 
 const Login = () => {
   return (
     <div>
       <div className="login-container">
-        <FormLogin />
+        <Actividad />
       </div>
     </div>
   );
