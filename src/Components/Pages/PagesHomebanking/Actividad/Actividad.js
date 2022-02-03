@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Item from "./Item";
 
 const Actividad = () => {
@@ -7,10 +6,7 @@ const Actividad = () => {
       <div className="d-flex justify-content-between">
     <div className="act-header">
           <h1 className="title">Historial</h1>
-
       </div>
-
-       
       </div>
       <Item />
       <Item />
