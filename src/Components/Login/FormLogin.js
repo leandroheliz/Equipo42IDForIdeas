@@ -100,8 +100,6 @@ const FormLogin = () => {
             </Form>
           </div>
         )}
-
-      
       </Formik>
     </>
   );
