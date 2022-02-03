@@ -1,4 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { React, useState } from "react";
+import { Link } from "react-router-dom";
+import cors from "cors";
 
 const FormLogin = () => {
   return (
@@ -22,7 +25,7 @@ const FormLogin = () => {
           //Validacion password
           if (!values.formLoginPass) {
             errores.formLoginPass = "Por favor ingresa una password";
-          } else if (!/^[]{3}$/.test(values.formLoginPass)) {
+          } else if (!/^[0-9]{3}$/.test(values.formLoginPass)) {
             errores.formLoginPass = "Ingrese una contraseña valida";
           }
 
@@ -35,7 +38,7 @@ const FormLogin = () => {
             email: values.formLoginEmail,
             password: values.formLoginPass,
           };
-              console.log(user);
+
           const getToken = () => {
             fetch(
               "https://backend-equipo42-idf-or-ideas.vercel.app/user/token",
