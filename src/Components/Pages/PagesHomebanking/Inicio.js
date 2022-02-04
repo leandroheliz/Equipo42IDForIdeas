@@ -2,6 +2,7 @@ import Actividad from "./Actividad/Actividad";
 import Saldo from "./Saldo/Saldo";
 import Logo from "../../Logo/Logo";
 import Chart from "../Chart/Chart";
+import fotoPerfil from './PerfilUsuario/Img/perfil.jpg';
 
 const Inicio = () => {
   return (
@@ -9,12 +10,23 @@ const Inicio = () => {
       <div className="row">
         <div className="col colHomebanking text-center">
         <Saldo/>
-        <br/>
         </div>
-        <div className="col mt-4">
+        <div className="col">
+        <div className="container-saldo">
+      <div className="saldo-col1">
+        <div className="d-flex justify-content-start">
+      <img src={fotoPerfil} alt="" className="rounded-circle" style={{height:"110px", width:"110px"}}/>
+        </div>
+      cuentas del usuario + datos
+       
+      </div>
+    </div>
+
+        </div>
+        <div className="col">
          <Chart/>
         </div>
-        <div className="row d-flex justify-content-center">
+        <div className="row d-flex justify-content-center text-center">
           <div className="col-4">
         <Logo/>
           </div>

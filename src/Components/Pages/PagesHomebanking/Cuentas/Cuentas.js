@@ -1,11 +1,8 @@
-import React from 'react'
 
 const Cuentas = () => {
-    return(
-        <div>
-            <h1>Cuentas</h1>
-        </div>
-    )
+  return <div>
+         
+      </div>
 }
 
 export default Cuentas;

@@ -5,7 +5,7 @@ const Logo = () => {
     <div className="container-logo">
       <div className="logo-card">
         <div className="text">
-          <h1>Plus+</h1>
+          <h2 className="text-white">Plus+</h2>
           <p>Bank</p>
         </div>
       </div>
