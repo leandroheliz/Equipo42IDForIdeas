@@ -2,7 +2,7 @@ import React from "react";
 
 const Cards = () => {
   return (
-    <div className="card-container">
+    <div className="card-container mt-3">
       <div className="card-header-title">Plus Bank</div>
       <div className="card-number">
         <span>1321</span>

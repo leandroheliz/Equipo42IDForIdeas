@@ -2,7 +2,6 @@ import Actividad from "./Actividad/Actividad";
 import Saldo from "./Saldo/Saldo";
 import Logo from "../../Logo/Logo";
 import Chart from "../Chart/Chart";
-// import Tarjeta from "./Tarjetas/Tarjeta";
 
 const Inicio = () => {
   return (
@@ -11,8 +10,6 @@ const Inicio = () => {
         <div className="col colHomebanking text-center">
         <Saldo/>
         <br/>
-        {/* <Tarjeta/>
-        <br/> */}
         </div>
         <div className="col mt-4">
          <Chart/>

@@ -5,8 +5,25 @@ const Saldo = () => {
     <div className="container-saldo">
       <div className="saldo-col1">
         <Cards />
-        <div className="btns">
-          <button>Transferir Dinero</button>
+        <div className="container">
+          <div className="row d-flex align-items-center">
+            <div className="col">
+              <div className="btns">
+                <button>Transferir Dinero</button>
+              </div>
+            </div>
+            <div className="col mt-4">
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <span>Desactivar</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
