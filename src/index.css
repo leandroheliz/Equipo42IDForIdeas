@@ -63,7 +63,6 @@ body {
   width: 18rem;
   display: flex;
   flex-direction: column;
-  text-align: start;
 }
 
 .menu i {
@@ -751,7 +750,6 @@ form > button {
 .card-number {
   display: flex;
   flex-direction: row;
-  justify-content: start;
   padding: 1.5rem 0 0 0;
   font-size: 0.9rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",

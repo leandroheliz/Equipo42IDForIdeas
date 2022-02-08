@@ -14,7 +14,7 @@ const Inicio = () => {
         <div className="col">
         <div className="container-saldo">
       <div className="saldo-col1">
-        <div className="d-flex justify-content-start">
+        <div className="d-flex">
       <img src={fotoPerfil} alt="" className="rounded-circle" style={{height:"110px", width:"110px"}}/>
         </div>
       cuentas del usuario + datos
