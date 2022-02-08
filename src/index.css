@@ -23,17 +23,6 @@ body {
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-  /* width: 8px;
-  background: var(--color1); */
-}
-
-/* body::-webkit-scrollbar-thumb {
-  background-color: rgba(81, 139, 144,0.9);
-  border-radius: 10px;
-} */
-
 .navBar {
   background: var(--color1);
   font-size: 20px;
