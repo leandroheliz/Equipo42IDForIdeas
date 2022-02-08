@@ -1,11 +1,8 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { React } from "react";
 import { useNavigate } from "react-router-dom";
-// import { Link } from "react-router-dom";
-// import cors from "cors";
 import {
   setToken,
-  getToken,
   initAxiosInterceptors,
 } from "../Helpers/auth-helpers";
 import axios from "axios";
