@@ -22,18 +22,31 @@ ChartJS.register(
   Filler
 );
 
-const scores = [3,6,2,7,3,10,3,6,9,6,11,5]; //eje x
-const labels = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septembre', 'Octubre', 'Noviembre', 'Diciembre']; //eje y
+const scores = [3, 6, 2, 7, 3, 10, 3, 6, 9, 6, 11, 5]; //eje x
+const labels = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+]; //eje y
 const options = {
-  fill:true,
+  fill: true,
   reponsive: true,
-  scales:{
-    y:{
-      min:0,
-      max:12
-    }
-  }
-}
+  scales: {
+    y: {
+      min: 0,
+      max: 12,
+    },
+  },
+};
 
 function LineChart() {
   const data = useMemo(function () {
@@ -46,13 +59,13 @@ function LineChart() {
           borderColor: "rgb(80, 135, 140)",
           pointRadius: 6,
           pointBackgroundColor: "rgba(80, 135, 140, 0.3)",
-          backgroundColor : "rgba(65, 179, 95, 0.4)",
+          backgroundColor: "rgba(65, 179, 95, 0.4)",
         },
       ],
-      labels
-    }
+      labels,
+    };
   }, []);
-  return <Line data={data} options={options}/>
+  return <Line data={data} options={options} />;
 }
 
 export default LineChart;

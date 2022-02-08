@@ -3,8 +3,6 @@ import Home from "../Components/Pages/PagesBanco/Home";
 import About from "../Components/Pages/PagesBanco/About";
 import PreguntasFrecuentes from "../Components/Pages/PagesBanco/PreguntasFrecuentes";
 import Contacto from "../Components/Pages/PagesBanco/Contacto";
-import Login from "../Components/Pages/PagesBanco/Login";
-import Registro from "../Components/Pages/PagesBanco/Registro";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 import Error404 from "../Components/Pages/PagesBanco/Error404";
@@ -22,9 +20,8 @@ const Rutas = () => {
               element={<PreguntasFrecuentes />}
             />
             <Route path="contacto" element={<Contacto />} />
-            <Route path="login" element={<Login />} />
-            <Route path="*" element={<Error404 />} />
             <Route path="/" element={<Home />} />
+            <Route path="*" element={<Error404 />} />
           </Routes>
         </div>
         <Footer />

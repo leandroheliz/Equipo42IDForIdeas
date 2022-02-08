@@ -1,17 +1,28 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
-// import { React, useState } from "react";
+import { React } from "react";
+import { useNavigate } from "react-router-dom";
 // import { Link } from "react-router-dom";
 // import cors from "cors";
+import {
+  setToken,
+  getToken,
+  initAxiosInterceptors,
+} from "../Helpers/auth-helpers";
 import axios from "axios";
 
+initAxiosInterceptors();
+
 const FormLogin = () => {
-  const getToken = (user) => {
-    axios
+  const navigate = useNavigate();
+  const login = async (user) => {
+    await axios
       .post("https://backend-equipo42-idf-or-ideas.vercel.app/user/token", {
         email: user.email,
         password: user.password,
       })
       .then((data) => {
+        console.log(data.data.accesToken);
+        setToken(data.data.accesToken);
         console.log(data);
       })
       .catch((error) => {
@@ -30,7 +41,10 @@ const FormLogin = () => {
             email: values.formLoginEmail,
             password: values.formLoginPass,
           };
-          getToken(user);
+
+          console.log(user);
+          login(user);
+          navigate("/apphomebanking");
         }}
       >
         {({ errors }) => (
